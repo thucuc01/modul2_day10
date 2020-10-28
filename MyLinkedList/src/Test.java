@@ -1,0 +1,50 @@
+public class Test {
+    public static void main(String[] args) {
+        MyLinkedList myLinkedList = new MyLinkedList(1);
+        myLinkedList.printList();
+        System.out.println("Add first 2");
+        myLinkedList.addFirst(2);
+        myLinkedList.printList();
+        System.out.println("Add last 0");
+        myLinkedList.addLast(0);
+        myLinkedList.printList();
+        System.out.println("Add 1 to index 1");
+        myLinkedList.add(1,1);
+        myLinkedList.printList();
+        System.out.println("Remove index 3");
+        System.out.println("The element was deleted is: " + myLinkedList.remove(3));
+        myLinkedList.printList();
+        System.out.println("Remove element 1");
+        myLinkedList.removeObj(1);
+        myLinkedList.printList();
+        System.out.println("Remove element 1");
+        myLinkedList.removeObj(1);
+        myLinkedList.printList();
+        System.out.println("Add elements");
+        myLinkedList.addLast(3);
+        myLinkedList.addLast(4);
+        myLinkedList.addLast(5);
+        myLinkedList.printList();
+        System.out.println("Get element index 2");
+        System.out.println(myLinkedList.get(2).getData());
+        System.out.println("Size of list is: "+myLinkedList.size());
+        System.out.println("My list have element 3?: " + myLinkedList.contains(3));
+        System.out.println("My list have element 5?: " + myLinkedList.contains(5));
+        System.out.println("My list have element 8?: " + myLinkedList.contains(8));
+        System.out.println("The index of element 3 is: " + myLinkedList.indexOf(3));
+        System.out.println("The index of element 8 is: " + myLinkedList.indexOf(8));
+        System.out.println("Print List");
+        myLinkedList.printList();
+        System.out.println("Cloning");
+        System.out.println("Print list1");
+        MyLinkedList myLinkedList1 = new MyLinkedList(1);
+        myLinkedList1 = myLinkedList.clone();
+        myLinkedList1.printList();
+        System.out.println("Add list 1");
+        myLinkedList1.addLast(6);
+        System.out.println("Print List");
+        myLinkedList.printList();
+        System.out.println("Print list1");
+        myLinkedList1.printList();
+    }
+}
